@@ -97,7 +97,7 @@ input[type=range]{width:100%;accent-color:var(--marca);height:28px}
 
   <section class="card barras" aria-label="Comparación">
     <div class="barra pierde"><p><span>Lo que pierdes en un año</span><b id="b1v">2.400 €</b></p><div class="pista"><i id="b1" style="width:100%"></i></div></div>
-    <div class="barra web"><p><span>Tu web, una sola vez</span><b>149 €</b></p><div class="pista"><i id="b2" style="width:6%"></i></div></div>
+    <div class="barra web"><p><span>Tu web, una sola vez</span><b>249 €</b></p><div class="pista"><i id="b2" style="width:6%"></i></div></div>
   </section>
 
   <section class="paga">
@@ -111,11 +111,11 @@ input[type=range]{width:100%;accent-color:var(--marca);height:28px}
   <section class="card">
     <p style="margin:0;font-weight:800;font-size:18px">Precios · pago único</p>
     <ul class="packs">
-      <li><span><b>Esencial</b> · web de una página, lista en 48 h</span><span><s>249 €</s><b>149 €</b></span></li>
-      <li><span><b>Visible ⭐</b> · web + ficha de Google Maps + reseñas</span><span><s>399 €</s><b>249 €</b></span></li>
-      <li><span><b>Completo</b> · Visible + publicaciones + cita online</span><span><s>499 €</s><b>349 €</b></span></li>
+      <li><span><b>Esencial</b> · web de una página, lista en 48 h</span><span><b>249 €</b></span></li>
+      <li><span><b>Visible ⭐</b> · web + ficha de Google Maps + reseñas</span><span><b>399 €</b></span></li>
+      <li><span><b>Completo</b> · Visible + publicaciones + cita online</span><span><b>499 €</b></span></li>
     </ul>
-    <p class="nota">Precio de lanzamiento para los 5 primeros negocios. Sin cuotas: solo el dominio, unos 10-15 € al año (el primero va incluido en Visible y Completo). <b data-plazas hidden></b></p>
+    <p class="nota">Pago único, sin cuotas: solo el dominio si lo quieres, unos 10-15 € al año.</p>
   </section>
 
   <a class="sec" id="radio" href="../radiografia/">¿Qué te falta exactamente? Hazte la radiografía gratis →</a>
@@ -124,7 +124,7 @@ input[type=range]{width:100%;accent-color:var(--marca);height:28px}
 <script>
 (function(){
   "use strict";
-  var $=function(s){return document.querySelector(s)}, WEB=149, TEL="34692024735", RADAR="radar-iori-w55l9b611ksj13";
+  var $=function(s){return document.querySelector(s)}, WEB=249, TEL="34692024735", RADAR="radar-iori-w55l9b611ksj13";
   var eur=function(n){return Math.round(n).toLocaleString("es-ES")+" €"};
   var tocado=false, enviado=false;
   try{if(location.hash==="#yo"){localStorage.setItem("radar-off","1")}}catch(e){}
@@ -169,6 +169,5 @@ input[type=range]{width:100%;accent-color:var(--marca);height:28px}
   calc();
 })();
 </script>
-<script src="../plazas.js" defer></script>
 </body>
 </html>
