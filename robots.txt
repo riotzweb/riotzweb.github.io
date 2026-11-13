@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://riotzweb.github.io/sitemap.xml
