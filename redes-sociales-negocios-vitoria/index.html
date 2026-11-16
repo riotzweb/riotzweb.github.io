@@ -179,7 +179,7 @@ header .btn{min-height:42px;padding:0 18px;font-size:15px}
 .soft+section{border-top:0}
 
 /* servicios */
-.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
+.svc{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:56px}
 @media (max-width:980px){.svc{grid-template-columns:1fr;max-width:560px}}
 .svc-c{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);overflow:hidden;color:var(--ink);text-decoration:none;transition:transform .22s var(--ease),box-shadow .22s var(--ease),border-color .22s ease-out}
 @media (hover:hover) and (pointer:fine){.svc-c:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--blue) 45%,var(--line))}.svc-c:hover .svc-go svg{transform:translateX(4px)}}
@@ -478,6 +478,15 @@ label.rd-fila:hover{border-color:var(--ink-2)}
 @media (max-width:520px){.rd-fila{grid-template-columns:1fr}.rd-fila .rd-step{justify-self:start}}
 /* redes-css:fin */
 
+/* Servicio 04: conversación de WhatsApp en miniatura */
+.mini-wa{display:flex;flex-direction:column;gap:8px;padding:26px 28px;font-size:13.5px;line-height:1.35}
+.svc-v .mini-wa{position:absolute;inset:0;justify-content:center;background:#e9eef6}
+.mini-wa p{margin:0;max-width:78%;padding:9px 12px;border-radius:12px;box-shadow:0 1px 1px rgb(13 20 36/.08)}
+.mini-wa .in{background:#fff;color:#0d1424;align-self:flex-start;border-top-left-radius:4px}
+.mini-wa .out{background:#d9fdd3;color:#0d1424;align-self:flex-end;border-top-right-radius:4px}
+.sv-hero .mini-wa{background:#e9eef6;border-radius:var(--r-l);border:1px solid var(--line);min-height:300px;justify-content:center}
+
+.steps.s3{grid-template-columns:repeat(3,1fr)}@media (max-width:860px){.steps.s3{grid-template-columns:1fr}}
 .sv-hero{padding:56px 0 72px;border:0;overflow:hidden}
 .sv-hero .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:56px;align-items:center}
 .sv-hero h1{font-size:clamp(38px,4.8vw,64px);margin-bottom:22px}
@@ -526,6 +535,7 @@ label.rd-fila:hover{border-color:var(--ink-2)}
     <a class="nl" href="../diseno-web-vitoria/">Diseño web</a>
     <a class="nl" href="../ficha-google-maps-negocios-vitoria/">Google Maps</a>
     <a class="nl" href="../redes-sociales-negocios-vitoria/">Redes sociales</a>
+    <a class="nl" href="../respuesta-whatsapp-negocios/">WhatsApp</a>
     <a class="nl" href="../#ejemplos">Trabajos</a>
     <a class="btn btn-wa" href="https://wa.me/34692024735?text=Hola%2C%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Pedir propuesta</a>
   </nav>
@@ -565,7 +575,7 @@ label.rd-fila:hover{border-color:var(--ink-2)}
 <section><div class="wrap">
   <div class="sec-h"><div><div class="kicker">Método</div><h2>Tres pasos que se repiten cada mes.</h2></div>
   <p class="lead">El primer mes lo ves antes de pagar: si no te convence lo que te preparo, no pagas nada y no se publica nada.</p></div>
-  <div class="steps" style="grid-template-columns:repeat(3,1fr)">
+  <div class="steps s3">
     <div class="step"><h3>Me cuentas las novedades</h3><p>Cinco minutos por WhatsApp: ofertas, cambios de horario, fotos nuevas.</p></div>
     <div class="step"><h3>Te preparo el mes</h3><p>Te mando un enlace con todas las publicaciones para verlas en el móvil. Lo que no te guste, lo cambio.</p></div>
     <div class="step"><h3>Se publica solo</h3><p>Lo dejo programado. Tú solo atiendes a los clientes que te escriban.</p></div>
@@ -590,7 +600,7 @@ label.rd-fila:hover{border-color:var(--ink-2)}
 <footer class="pie"><div class="wrap">
   <div><a class="brand" href="../"><img src="../img/icono.svg" alt="" width="36" height="36"><span>Riotz<small>Presencia digital</small></span></a>
     <p>Web, Google Maps y redes sociales para negocios de toda España. Desde Vitoria-Gasteiz.</p></div>
-  <div><b>Servicios</b><a href="../diseno-web-vitoria/">Diseño web</a><a href="../ficha-google-maps-negocios-vitoria/">Google Maps</a><a href="../redes-sociales-negocios-vitoria/">Redes sociales</a><a href="../#sueltos">Servicios sueltos</a><a href="../condiciones/">Condiciones</a></div>
+  <div><b>Servicios</b><a href="../diseno-web-vitoria/">Diseño web</a><a href="../ficha-google-maps-negocios-vitoria/">Google Maps</a><a href="../redes-sociales-negocios-vitoria/">Redes sociales</a><a href="../#sueltos">Servicios sueltos</a><a href="../condiciones/">Condiciones</a><a href="../respuesta-whatsapp-negocios/">Respuesta por WhatsApp</a></div>
   <div><b>Por tipo de negocio</b><a href="../web-para-peluquerias-vitoria/">Peluquerías</a><a href="../web-para-barberias-vitoria/">Barberías</a><a href="../web-para-bares-y-restaurantes-vitoria/">Bares y restaurantes</a><a href="../web-para-fisioterapeutas-vitoria/">Fisioterapia</a><a href="../web-para-centros-de-estetica-vitoria/">Estética y uñas</a><a href="../web-para-talleres-vitoria/">Talleres</a><a href="../web-para-reformas-y-oficios-vitoria/">Reformas y oficios</a></div>
   <div><b>Por barrio</b><a href="../web-negocios-centro-vitoria/">Centro y Casco Viejo</a><a href="../web-negocios-salburua/">Salburua</a><a href="../web-negocios-zabalgana/">Zabalgana</a><a href="../web-negocios-lakua/">Lakua</a><a href="../eu/" hreflang="eu" lang="eu">Euskaraz</a></div>
   <div><b>Guías y recursos</b><a href="../guias/horario-festivos-google-maps/">Horario de festivos en Google Maps</a><a href="../guias/conseguir-resenas-google/">Cómo conseguir más reseñas</a><a href="../guias/fresha-instagram-o-web-propia/">¿Fresha, Instagram o web propia?</a><a href="../prueba-tu-web/">Tu web de muestra</a><a href="../tu-instagram/">Tu Instagram de muestra</a><a href="../dossier.pdf">Dossier en PDF</a></div>

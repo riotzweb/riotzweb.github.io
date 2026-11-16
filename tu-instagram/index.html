@@ -177,7 +177,7 @@ header .btn{min-height:42px;padding:0 18px;font-size:15px}
 .soft+section{border-top:0}
 
 /* servicios */
-.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
+.svc{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:56px}
 @media (max-width:980px){.svc{grid-template-columns:1fr;max-width:560px}}
 .svc-c{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);overflow:hidden;color:var(--ink);text-decoration:none;transition:transform .22s var(--ease),box-shadow .22s var(--ease),border-color .22s ease-out}
 @media (hover:hover) and (pointer:fine){.svc-c:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--blue) 45%,var(--line))}.svc-c:hover .svc-go svg{transform:translateX(4px)}}
@@ -475,6 +475,14 @@ label.rd-fila:hover{border-color:var(--ink-2)}
 @media (max-width:900px){.rd-calc{grid-template-columns:1fr}.rd-total{position:static}.rd-promesas{grid-template-columns:1fr}.rd-movil{display:block}}
 @media (max-width:520px){.rd-fila{grid-template-columns:1fr}.rd-fila .rd-step{justify-self:start}}
 /* redes-css:fin */
+
+/* Servicio 04: conversación de WhatsApp en miniatura */
+.mini-wa{display:flex;flex-direction:column;gap:8px;padding:26px 28px;font-size:13.5px;line-height:1.35}
+.svc-v .mini-wa{position:absolute;inset:0;justify-content:center;background:#e9eef6}
+.mini-wa p{margin:0;max-width:78%;padding:9px 12px;border-radius:12px;box-shadow:0 1px 1px rgb(13 20 36/.08)}
+.mini-wa .in{background:#fff;color:#0d1424;align-self:flex-start;border-top-left-radius:4px}
+.mini-wa .out{background:#d9fdd3;color:#0d1424;align-self:flex-end;border-top-right-radius:4px}
+.sv-hero .mini-wa{background:#e9eef6;border-radius:var(--r-l);border:1px solid var(--line);min-height:300px;justify-content:center}
 
 .ig{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:48px;align-items:start;margin-top:32px}
 @media (max-width:900px){.ig{grid-template-columns:minmax(0,1fr)}.ig>div{min-width:0}}
